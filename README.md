@@ -1,5 +1,5 @@
 # ssh连接github方法
-===
+
 
 一、软件安装
 ----
@@ -13,13 +13,10 @@
 三、设置git bash全局变量
 ----
 1、打开Git Bash
-2、给你这个电脑取一个名字和邮件地址：
-···python
-$ git config --global user.name "Your Name"
-···
-···
-$ git config --global user.email "email@example.com"
-···
+2、给你这个电脑取一个名字和邮件地址：<br>
+$ git config --global user.name "Your Name" <br>
+$ git config --global user.email "email@example.com"<br>
+
 
 四、设置本地公钥和私钥也即ssh key
 ----
@@ -41,10 +38,12 @@ ssh -T git@github.com
 
 若返回Hi XXX! You've successfully authenticated, but Github.com does not provide shell access. 内容，则证明添加成功。
 
-五、从远程克隆
+六、从远程克隆
+---
 1、在github仓库复制仓库的ssh地址
 
-六、上传
+七、上传
+---
 1、修改后保存
 2、点击加号确认，版本修改内容，提交
 3、点击左下角连接远程更新。
