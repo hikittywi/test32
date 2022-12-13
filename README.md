@@ -6,7 +6,14 @@
 
 二、在Github上创建空的仓库/项目
 1、选择公开项目创建
-2、
+
+三、设置git bash全局变量
+1、打开Git Bash
+2、给你这个电脑取一个名字和邮件地址：
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
 
 三、设置本地公钥和私钥也即ssh key
 创建SSH Key，之前看下在C:\Users\&yourname&目录有没有.ssh文件夹，如果有打开看看有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接使用。如果没有，打开Git Bash （这个和前面设置全局用户名邮箱那个步骤是一样的，打开输入即可，由于是全局设置没必要纠结在哪个文件夹打开），输入一下命令，创建SSH Key：
