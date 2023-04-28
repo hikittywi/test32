@@ -1,0 +1,71 @@
+在VPS上 通过Docker 来进行安装
+
+1、安装Curl
+
+sudo apt install curl
+
+要验证是否正确安装Curl，请在终端键入 curl ，然后按 Enter
+
+2、通过 Docker 一键安装脚本进行部署
+
+sudo bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/DockerInstallation.sh)
+
+========
+提示错误：
+bash: /dev/fd/63: No such file or directory
+curl: (23) Failure writing output to destination
+
+解决1：
+sudo -i
+切换到root用户下执行
+
+解决2：删除snap安装的curl版本
+sudo snap remove curl
+sudo apt install curl
+========
+请选择并输入你想使用的 Docker CE 源 [ 1~8 ]：8    选择8，官方渠道安装
+是否安装最新版本的 Docker Engine? [Y/n]   Y
+请选择并输入你想使用的 Docker Hub 源 [ 1~12 ]：12
+是否安装 Docker Compose? [Y/n]  y
+是否使用国内代理进行下载? [Y/n]  n
+
+
+
+
+3、下载并安装git
+github仓库地址：
+https://github.com/reworkd/AgentGPT
+
+先安装下Git：
+sudo apt update
+sudo apt install git
+
+检查git版本：
+git --version
+
+4、下载 AgentGPT 源码
+
+git clone https://github.com/reworkd/AgentGPT.git
+
+5、下载后执行下面安装命令
+
+cd AgentGPT
+
+./setup.sh --docker
+
+
+6、获取自己的Open AI 的密钥
+
+
+7、安装完成以后，你只需在浏览器上打开：http:xxx.xx.xx.xx:3000
+
+=================================
+另外一个替换chatgpt的Claude，比较适合中文用户
+
+1、首先你需要在slack上注册一个账号
+https://slack.com/get-started#/create
+2、在工作区添加应用，加入 Claude 即可
+https://www.anthropic.com/claude-in-slack
+
+
+
