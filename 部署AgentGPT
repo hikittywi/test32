@@ -17,7 +17,8 @@ curl: (23) Failure writing output to destination
 
 解决1：
 sudo -i
-切换到root用户下执行
+切换到root用户下执行，注意，下面命令不要加sudo
+bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/DockerInstallation.sh)
 
 解决2：删除snap安装的curl版本
 sudo snap remove curl
