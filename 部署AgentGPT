@@ -49,16 +49,16 @@ git --version
 git clone https://github.com/reworkd/AgentGPT.git
 
 5、下载后执行下面安装命令
-
 cd AgentGPT
-
 ./setup.sh --docker
-
+安装过程中需要输入open ai密钥，约2分钟
 
 6、获取自己的Open AI 的密钥
-
+略过
 
 7、安装完成以后，你只需在浏览器上打开：http:xxx.xx.xx.xx:3000
+打开浏览器后，在设置中，在输入open ai密钥
+
 
 =================================
 另外一个替换chatgpt的Claude，比较适合中文用户
